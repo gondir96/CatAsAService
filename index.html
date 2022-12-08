@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Egy szuper oldal</title>
+</head>
+<body class="jumbotron text-center">
+    <h1>How would you like your cat?</h1>
+    <select class="text-center my-2" title="Type" id="typeSel">
+        <option value="notype"> choose a type </option>
+        <option value="small"> small </option>
+        <option value="medium"> medium </option>
+        <option value="square"> square </option>
+        <option value="original"> original </option>
+    </select>
+    <select class="text-center my-2" title="Filter" id="filterSel">
+        <option value="nofilter"> choose a filter </option>
+        <option value="blur"> blur </option>
+        <option value="mono"> mono </option>
+        <option value="sepia"> sepia </option>
+        <option value="negative"> negative </option>
+        <option value="paint"> paint </option>
+        <option value="pixel"> pixel </option>
+    </select>
+    <form class="text-center my-2">
+        <label>Width:</label><br>
+        <input id="widthInp" type="text"><br>
+        <label>Height :</label><br>
+        <input id="heightInp" type="text"><br>
+    </form>
+    <button class ="btn btn-primary my-4" id="gimme">
+        <span id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display:none"></span>
+        Fetch
+    </button>
+    <div class="text-center my-2" id="catImgDiv"></div>
+    <script src="app.js"></script>
+</body>
+</html>
